@@ -29,3 +29,7 @@ if __name__ == '__main__':
     network_objects = extract_info(file)
     create_topology(network_objects)
 ```
+
+This code uses regular expressions to extract the network objects from the Fortigate configuration file. The network objects are stored in a dictionary, where the key is the name of the object and the value is a tuple of the subnet and subnet mask. The create_topology function can then be used to create the network topology using a tool such as Matplotlib or NetworkX.
+
+Note: This is just a sample code and may need to be adapted to your specific use case. The exact solution will depend on the format of the Fortigate configuration file and your specific requirements for the network topology.
